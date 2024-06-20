@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: rgb(80, 36, 89);
+
+}
+
+.inputbox{
+    background: #fff;
+    width:90%;
+    max-width: 500px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-top: 300px ;
+    margin-left: 600px;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.inputbox input{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 34px;
+    color:black;
+}
+
+.inputbox img{
+    width: 65px;
+    cursor: pointer;
+}
+
+
+input[type=password]::-ms-reveal {
+    display: none    /*Removes default eye-icon*/
+  }
+

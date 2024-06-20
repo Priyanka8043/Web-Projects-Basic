@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Video Gallery</h1>
+    
+
+    <div class="row">
+
+        <div class="col">
+            <div class="feature-img">
+                <img src="images/twirl.png" alt="" width="100%">
+                <img src="images/playfinal.png" class="play-btn"  onclick="play('images/Line_Twirl_x264.mp4')">
+            </div>
+        </div>
+
+        <div class="col">
+
+            <div class="small-row">
+                <div class="small-img">
+                    <img src="images/cows.png" alt="">
+                    <img src="images/playfinal.png" class="play-btn" onclick="play('images/COWS_AT_THE_GRASS.mp4')">
+
+                </div>
+                <p>Cows' natural diet consists mainly of grasses, legumes, alfalfa, clover, and hay. Many cows also enjoy fruits as delicious snacks.</p>
+            </div>
+            
+            <div class="small-row">
+                <div class="small-img">
+                    <img src="images/crocodile.png" alt="">
+                    <img src="images/playfinal.png" class="play-btn" onclick="play('images/vecteezy_animation-of-a-cartoon-crocodile-dancing_11961085_574.mp4')">
+
+                </div>
+                <p>Crocodiles are mostly nocturnal animals. They are predators and spend most of their time  in the water.</p>
+            </div>
+
+            <div class="small-row">
+                <div class="small-img">
+                    <img src="images/sea.png" alt="">
+                    <img src="images/playfinal.png" class="play-btn" onclick="play('images/vecteezy_noah-s-ark-and-the-flood_14566832_755.mp4')">
+
+                </div>
+                <p>The ocean covers 71% of the Earth's surface .37 out of 50 critical minerals can be found in the ocean! </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="video-player" id="videoPlayer">
+    <video id="myVideo" width="100%" controls autoplay src="images/Line_Twirl_x264.mp4" type="video/mp4"></video>
+    <img src="images/close.png" class="close-btn" onclick="stop()">
+
+</div>
+ 
+
+<script src="app.js"></script>
+</body>
+</html>

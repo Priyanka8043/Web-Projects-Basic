@@ -1,0 +1,7 @@
+An HTML iframe is used to display a web page within a web page
+
+https://fontawesome.com/kits/5178e958dd/setup
+To get icons
+
+<script src="https://kit.fontawesome.com/5178e958dd.js" crossorigin="anonymous"></script>
+add this in html above head tag.

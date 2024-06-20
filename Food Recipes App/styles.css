@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+   
+}
+
+.pagemain{
+    background-color: #214d4d;
+    width: 100%;
+  
+    overflow-x: hidden;
+    position: relative;
+}
+
+.page1{
+    background-color: #0e3636;
+    width: 90%;
+    height: 80vh;
+    margin: 100px;
+    margin-top: 80px;
+    border-radius: 20px;
+    box-shadow:  0 0 150px   rgb(130, 38, 38);
+    
+
+}
+
+img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    margin-top: -100px;
+}
+
+h1{
+    font-family: 'Itim', cursive;
+    color:#f49e91 ;
+    position: absolute;
+    bottom: 200px;
+    left: 500px;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgb(126, 117, 117);
+   
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color:#0b4343;
+    text-align: center;   
+}
+
+body{
+    background-color:#0b4343; 
+    
+}
+
+.meal-serach-box input{
+    font-size: 25px;
+} 
+
+.meal-search{
+    padding-top: 100px;
+    position: relative;
+
+}
+
+
+.meal-search h2{
+    font-size:55px ;
+    font-family: 'Tenor Sans', serif; 
+    font-weight: 400;
+    color:#FF6700;
+    text-shadow: 1px 1px 1px white;
+}
+
+blockquote{
+    padding-top: 26px;
+    color: #f49e91;
+    font-size: 20px;
+}
+
+.meal-serach-box{
+  padding-top: 20px;
+    margin-left: 590px;
+    display: flex;
+    align-items: stretch;
+   
+    
+}
+
+.search-content{
+    height: 40px;
+    width: 400px;
+    padding-left: 70px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.btn{
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    padding: 10px;
+    background-color: #FF8C00;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.btn:hover{
+    background-color: #7b501c;
+    color: white;
+}
+
+
+.meal-result{
+    position: relative;
+    margin-top: 50px;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#meal{
+    margin: 10px 0;
+}
+
+.meal-item{
+    position: relative;
+    border-radius: 8px;
+    overflow:hidden;
+    background-color:#0d4e4e;
+    margin: 10px 50px;
+    height: 410px;
+    box-shadow: 0 0 12px rgb(118, 110, 110);
+   
+    
+   
+
+}
+
+/* .meal-img{
+  display: block;
+   
+} */
+
+.meal-img img{
+    width: 340px;
+    display: block;
+    height: 250px;
+    box-sizing: border-box;
+    margin-top: -90px;
+  
+}
+
+.meal-name{
+    
+    margin-top: 250px;
+    margin-bottom: 2px;
+  
+}
+
+.meal-name h3{
+    padding-top: 5px;
+    margin-bottom: 15px;
+    /* margin :1px 0; */
+    color:#FF6700;
+    font-size: 27px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.meal-name a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #ea4d35;
+    margin: 4px auto;
+    width: 300px;
+    border-radius: 6px;
+    display: block;
+   
+}
+
+.meal-name a:hover{
+    background-color: #d66a5a;
+}
+
+
+@media screen and (min-width:600px){
+    .meal-serach-box{
+        width:520px;
+       margin: 30px auto;
+       
+    }
+}
+
+@media screen and (min-width:768px){
+    #meal{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    
+}
+@media screen and (min-width:992px){
+    #meal{
+       
+        grid-template-columns: repeat(3,1fr);
+       
+    }
+}
+
+.details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 95%;
+    background-color:#FF5F1F;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow-y: scroll;
+    display:none ;
+    padding: 10px 0;
+    color: white;
+    border: 10px solid #277878;
+    text-align: center;
+    
+
+}
+
+.showRecipe{
+display: block;
+}
+
+.recipe-title{
+    
+    margin-bottom: 650px;
+    text-shadow: 2px 2px 3px #0e3636;
+    font-size: 40px;
+    text-align: center;
+}
+.recipe-category{
+    color: #ea4d35;
+     
+    position:absolute;
+   
+     margin-top: -620px;
+    margin-left: 720px;
+     background-color: #ded0cd;
+     padding: 10px 40px;
+     border-radius: 13px;
+     box-shadow: 2px 2px 4px #0e3636;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.recipe-instruct{
+     
+     line-height: 35px;
+     padding: 20px;
+     width:100vh;
+     margin-top: -300px;
+    margin-left: 350px;
+    
+ 
+}
+
+.recipe-instruct p{
+    word-wrap: break-word;
+    padding-bottom: 100px;
+    
+    
+}
+
+.recipe-instruct h3{
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-shadow: 2px 2px 3px #0e3636;
+    font-weight: 400;
+    
+    
+}
+
+.recipe-meal-img img{
+    width: 380px;
+    height: 250px;
+    border-radius: 10%;
+    box-shadow:  3px 3px 3px wheat;
+   
+
+}
+.recipe-link{
+     position: absolute;
+     margin-top: 440px;
+     margin-left: 720px;
+     
+     
+     
+     
+     
+     
+}
+
+.recipe-link a{
+    color: white;
+
+}
+
+.recipe-link a:hover{
+    color: rgb(35, 50, 51);
+}
+
+.recipes-close-btn{
+   position: absolute;
+   margin-left: 700px;
+   margin-bottom: 640px;
+   width: 30px;
+   height: 30px;
+   background-color: #d6a9a9;
+}
+
+.recipes-close-btn:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.mealNotFound{
+    color: rgb(247, 13, 13);
+    font-size: 40px;
+    margin-left: 300px;
+    width: 100%;
+    grid-template-columns: 1fr!important;
+    font-weight: 200;
+}
+
+
+
+

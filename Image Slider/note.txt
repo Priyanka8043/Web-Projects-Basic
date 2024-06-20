@@ -1,0 +1,5 @@
+https://swiperjs.com/get-started
+<!-- link from Swiper js --CDN link -->
+<!-- from swiper js----javascript script tag -->
+<!-- from swiper js--html layout -->
+<!-- initialize swiper -->
